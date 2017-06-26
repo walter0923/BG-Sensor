@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>3185005297</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\ADC.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.438\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_tb_10.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.523\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_14.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.826\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_11.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.200\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_adc12_05.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.469\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_OF_LFXT1_nmi.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.985\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_20.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\GPIO.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\GPIO.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\GPIO.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\config\linker\multiplier32.xcl</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.r43</file>
+            <file>$TOOLKIT_DIR$\config\linker\lnk430f5438a.xcl</file>
+            <file>$PROJ_DIR$\Debug\List\PPG.map</file>
+            <file>$PROJ_DIR$\GPIO.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\TIMER.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADC.__cstat.et</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.800\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_01.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\TIMER.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\TIMER.pbi</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.684\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_5.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.467\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_3.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.803\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_6.c</file>
+            <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\PPG.pbd</file>
+            <file>$PROJ_DIR$\Debug\Exe\PPG.d43</file>
+            <file>$TOOLKIT_DIR$\inc\in430.h</file>
+            <file>$TOOLKIT_DIR$\inc\msp430.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\PPG.ulp</file>
+            <file>$TOOLKIT_DIR$\inc\msp430f5438a.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.050\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_17.c</file>
+            <file>$PROJ_DIR$\main.h</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.754\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_8.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.524\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_01.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.206\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_RTC_02.c</file>
+            <file>$PROJ_DIR$\TIMER.h</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.065\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_adc12_07.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.046\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_11.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.329\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_7.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.267\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_8.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.019\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_9.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.153\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_20.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.726\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_ta3_19.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.783\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_2.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADC.r43</file>
+            <file>$PROJ_DIR$\Debug\Obj\ADC.pbi</file>
+            <file>$PROJ_DIR$\TIMER.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.167\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_9.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.030\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_adc12_02.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.852\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_4.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.861\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_7.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.389\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_adc12_01.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.448\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_adc12_06.c</file>
+            <file>C:\Users\Walter\AppData\Local\Temp\Rar$DRa0.650\MSP430F541xA_MSP430F543xA_Code_Examples\C\msp430x54xA_UCS_1.c</file>
+        </outputs>
+        <file>
+            <name>$PROJ_DIR$\ADC.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 29 31 28 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 28 31 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\GPIO.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 7</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 29 31 28 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 28 31 29</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 33</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 29 31 28 25 35 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 28 31 29 35 39</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ULP430</name>
+                    <file> 30</file>
+                </tool>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 27 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\PPG.d43</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 13 11 48 7 32 20 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\TIMER.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 16</file>
+                </tool>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 20</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC430</name>
+                    <file> 29 31 28 25 39</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 25 28 31 29 39</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
