@@ -11,7 +11,7 @@ void LED1PWM_Ini(void){
   P8SEL |= 0x7E;                            // P8 option select
   P8DIR |= 0x7E;                            // P8 outputs
 
-  TA0CCR0 = 512-1;                           // PWM Period
+  TA0CCR0 = 30000;                           // PWM Period
   TA0CCTL1 = OUTMOD_7;                       // CCR1 reset/set
   TA0CCR1 = 0;                             // CCR1 PWM Duty Cycle	
   TA0CCTL2 = OUTMOD_7;                       // CCR2 reset/set
@@ -27,7 +27,7 @@ void LED2PWM_Ini(void){
   P4SEL |= 0x7E;                            // P4 option select
   P4DIR |= 0x7E;                            // P4 outputs
 
-  TBCCR0 = 512-1;                           // PWM Period
+  TBCCR0 = 30000;                           // PWM Period
   TBCCTL1 = OUTMOD_7;                       // CCR1 reset/set
   TBCCR1 = 0;                             // CCR1 PWM Duty Cycle	
   TBCCTL2 = OUTMOD_7;                       // CCR2 reset/set

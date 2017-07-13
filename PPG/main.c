@@ -2,10 +2,11 @@
 #include "main.h"
 #include "TIMER.h"
 
+// Flash use 0x03FFFF-030000
 
 void main(void){
-  WDTCTL = WDTPW+WDTHOLD;
-  SetVcoreUp(PMMCOREV_1); 
+  WDTCTL = WDTPW + WDTHOLD;
+  /*SetVcoreUp(PMMCOREV_1); 
   SetVcoreUp(PMMCOREV_2);                     // Set VCore to 1.8MHz for 20MHz
 
   P7SEL |= 0x03;                            // Select XT1
@@ -21,14 +22,28 @@ void main(void){
 
   UCSCTL4 = SELA_0 + SELS_0 + SELM_0;       // Select ACLK = LFXT1
                                             //       SMCLK = LFXT1
-                                            //        MCLK = LFXT1
+                                            //        MCLK = LFXT1*/
 
-  TIMER_Ini();
-  LED1PWM_Ini();
-  LED2PWM_Ini();
+  //TIMER_Ini();
+  //LED1PWM_Ini();
+  //LED2PWM_Ini();
+  int i;
+  long int *Flash_ptrA;                        // Flash pointer
+  Flash_ptrA =(long int *)  0x02FFFF;
   
   while(1){
+    FCTL3 = FWKEY;
+    FCTL1 = FWKEY+WRT;
+    for(i = 0; i < 5881; i ++){
+      *Flash_ptrA = i;
+      Flash_ptrA --;
+    }
     
+    _NOP();
+    Flash_ptrA =(long int *)  0x02FFFF;
+    FCTL1 = FWKEY+MERAS; 
+    *Flash_ptrA = 0;
+    _NOP();
   }
 }
 

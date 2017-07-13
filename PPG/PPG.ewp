@@ -53,11 +53,11 @@
                 </option>
                 <option>
                     <name>RTConfigPath</name>
-                    <state>$TOOLKIT_DIR$\lib\dlib\dl430xlsfn.h</state>
+                    <state>$TOOLKIT_DIR$\lib\dlib\dl430xllfn.h</state>
                 </option>
                 <option>
                     <name>RTLibraryPath</name>
-                    <state>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</state>
+                    <state>$TOOLKIT_DIR$\lib\dlib\dl430xllfn.r43</state>
                 </option>
                 <option>
                     <name>Input variant</name>
@@ -104,15 +104,15 @@
                 </option>
                 <option>
                     <name>GStackSize2</name>
-                    <state>80</state>
+                    <state>160</state>
                 </option>
                 <option>
                     <name>GHeapSize2</name>
-                    <state>80</state>
+                    <state>160</state>
                 </option>
                 <option>
                     <name>RadioDataModelType</name>
-                    <state>0</state>
+                    <state>2</state>
                 </option>
                 <option>
                     <name>GHeap20Size</name>
@@ -755,7 +755,7 @@
                 </option>
                 <option>
                     <name>SecondaryOutputFile</name>
-                    <state></state>
+                    <state>(None for the selected format)</state>
                 </option>
                 <option>
                     <name>XDefines</name>
@@ -807,7 +807,7 @@
                 </option>
                 <option>
                     <name>XclFile</name>
-                    <state>lnk0t.xcl</state>
+                    <state>$TOOLKIT_DIR$\config\linker\lnk430f5438a.xcl</state>
                 </option>
                 <option>
                     <name>XclFileSlave</name>
@@ -895,7 +895,7 @@
                 </option>
                 <option>
                     <name>xcProgramEntryLabel</name>
-                    <state></state>
+                    <state>__program_start</state>
                 </option>
                 <option>
                     <name>DebugInformation</name>
@@ -935,7 +935,7 @@
                 </option>
                 <option>
                     <name>ExtraOutputFile</name>
-                    <state></state>
+                    <state>PPG.a43</state>
                 </option>
                 <option>
                     <name>ExtraOutputFormat</name>
@@ -1100,7 +1100,11 @@
                 <debug>1</debug>
                 <option>
                     <name>CUTest</name>
-                    <state>###Uninitialized###</state>
+                    <state>-I$TOOLKIT_DIR$\inc</state>
+                    <state>-@$TOOLKIT_DIR$\bin\iar.cmd</state>
+                    <state>-@$PROJ_DIR$\source.txt</state>
+                    <state>-@$PROJ_DIR$\include.txt</state>
+                    <state>--preinclude=$PROJ_DIR$\IAR_ULPAdvisor_Defs.h</state>
                 </option>
                 <option>
                     <name>ULPRules</name>

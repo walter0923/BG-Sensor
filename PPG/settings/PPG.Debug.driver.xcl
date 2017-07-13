@@ -16,7 +16,7 @@
 
 "--core=430Xv2" 
 
-"--data_model=small" 
+"--data_model=large" 
 
 "--iv_base" 
 
@@ -53,6 +53,8 @@
 "--use_emulated_breakpoints" 
 
 "--settlingtime=0" 
+
+"--allow_access_to_BSL" 
 
 "--msp430_dll" 
 
