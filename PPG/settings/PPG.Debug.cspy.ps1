@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\PPG\settings\PPG.Debug.general.xcl" --backend -f "D:\IAR Systems\PPG\settings\PPG.Debug.driver.xcl" 
+& "D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.general.xcl" --backend -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.driver.xcl" 
 }
 else
 {
-& "D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\PPG\settings\PPG.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\IAR Systems\PPG\settings\PPG.Debug.driver.xcl" 
+& "D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.driver.xcl" 
 }

@@ -61,7 +61,7 @@
         <FreqHi>0</FreqHi>
     </Simulator>
     <DebugChecksum>
-        <Checksum>2272127142</Checksum>
+        <Checksum>2784000773</Checksum>
     </DebugChecksum>
     <CallStack>
         <ShowArgs>0</ShowArgs>
@@ -74,10 +74,17 @@
         <GraphEnabled>0</GraphEnabled>
         <ShowTimeLog>1</ShowTimeLog>
     </DataSample>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
     <Breakpoints>
-        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\main.c}.42.5" 1 0 0 0 "" 0 ""</Bp0>
-        <Bp1>_ "STD_CODE" "{$PROJ_DIR$\main.c}.46.5" 1 0 0 0 "" 0 ""</Bp1>
-        <Count>2</Count>
+        <Count>0</Count>
     </Breakpoints>
     <FET>
         <Clock_mode>46</Clock_mode>
@@ -101,15 +108,6 @@
         <all_registers>0</all_registers>
         <File_name />
     </Memory_Dump>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-        <Category>_ 0</Category>
-    </LogFile>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>

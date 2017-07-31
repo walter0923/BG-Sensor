@@ -2109,4 +2109,7 @@
     <file>
         <name>$PROJ_DIR$\TIMER.c</name>
     </file>
+    <file>
+        <name>$PROJ_DIR$\UART.c</name>
+    </file>
 </project>

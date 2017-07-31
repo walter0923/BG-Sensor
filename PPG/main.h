@@ -1,17 +1,16 @@
 void SetVcoreUp (unsigned int level);
 
-extern int data0[392];
-extern int data1[392];
-extern int data2[392];
-extern int data3[392];
-extern int data4[392];
-extern int data5[392];
-extern int data6[392];
-extern int data7[392];
-extern int data8[392];
-extern int data9[392];
-extern int data10[392];
-extern int data11[392];
-extern int data12[392];
-extern int data13[392];
-extern int data14[392];
+/* PWM Setting*/
+#define PWMfrequency    10
+
+#define LEDa1Dutycycle  100
+#define LEDa2Dutycycle  100
+#define LEDa3Dutycycle  100
+#define LEDa4Dutycycle  100
+
+#define LEDb1Dutycycle  100
+#define LEDb2Dutycycle  100
+#define LEDb3Dutycycle  100
+#define LEDb4Dutycycle  100
+
+extern int DataEmpty;

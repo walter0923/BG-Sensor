@@ -1,4 +1,4 @@
-"D:\IAR Systems\PPG\ADC.c"
+"D:\IAR Systems\BG-Sensor-master\PPG\ADC.c"
 -std=c99
 -ferror-limit=100
 -I

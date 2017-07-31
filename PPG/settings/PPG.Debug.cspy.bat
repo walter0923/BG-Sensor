@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\PPG\settings\PPG.Debug.general.xcl" --backend -f "D:\IAR Systems\PPG\settings\PPG.Debug.driver.xcl" 
+"D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.general.xcl" --backend -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\PPG\settings\PPG.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\IAR Systems\PPG\settings\PPG.Debug.driver.xcl" 
+"D:\IAR Systems\common\bin\cspybat" -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\IAR Systems\BG-Sensor-master\PPG\settings\PPG.Debug.driver.xcl" 
 
 @echo off 
 :end

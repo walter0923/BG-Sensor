@@ -1,4 +1,4 @@
-"D:\IAR Systems\PPG\TIMER.c"
+"D:\IAR Systems\BG-Sensor-master\PPG\TIMER.c"
 -std=c99
 -ferror-limit=100
 -I

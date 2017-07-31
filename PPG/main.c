@@ -1,13 +1,17 @@
 #include <msp430.h>
 #include "main.h"
 #include "TIMER.h"
+#include "GPIO.h"
+#include "ADC.h"
+#include "UART.h"
 
 // Flash use 0x03FFFF-030000
+int DataEmpty = 0;
 
 void main(void){
   WDTCTL = WDTPW + WDTHOLD;
   /*SetVcoreUp(PMMCOREV_1); 
-  SetVcoreUp(PMMCOREV_2);                     // Set VCore to 1.8MHz for 20MHz
+  //SetVcoreUp(PMMCOREV_2);                     // Set VCore to 1.8MHz for 20MHz
 
   P7SEL |= 0x03;                            // Select XT1
   UCSCTL6 &= ~(XT1OFF);                     // XT1 On
@@ -20,30 +24,47 @@ void main(void){
     SFRIFG1 &= ~OFIFG;                      // Clear fault flags
   }while (SFRIFG1&OFIFG);                   // Test oscillator fault flag
 
-  UCSCTL4 = SELA_0 + SELS_0 + SELM_0;       // Select ACLK = LFXT1
+  UCSCTL4 = SELA_0 + SELS_0 + SELM_4;       // Select ACLK = LFXT1
                                             //       SMCLK = LFXT1
-                                            //        MCLK = LFXT1*/
-
-  //TIMER_Ini();
-  //LED1PWM_Ini();
-  //LED2PWM_Ini();
-  int i;
-  long int *Flash_ptrA;                        // Flash pointer
-  Flash_ptrA =(long int *)  0x02FFFF;
+                                            //        MCLK = DCO*/
   
+  SetVcoreUp (PMMCOREV_1);                     // Set VCore = 1.6V for 12MHz clock
+  UCSCTL3 |= SELREF_2;                      // Set DCO FLL reference = REFO
+  //UCSCTL4 |= SELA_2;                        // Set ACLK = REFO
+  UCSCTL4 = SELA_2 + SELS_3 + SELM_3; 
+  
+  __bis_SR_register(SCG0);                  // Disable the FLL control loop
+  UCSCTL0 = 0x0000;                         // Set lowest possible DCOx, MODx
+  UCSCTL1 = DCORSEL_5;                      // Select DCO range 24MHz operation
+  UCSCTL2 = FLLD_1 + 374;                   // Set DCO Multiplier for 12MHz
+                                            // (N + 1) * FLLRef = Fdco
+                                            // (374 + 1) * 32768 = 12MHz
+                                            // Set FLL Div = fDCOCLK/2
+  __bic_SR_register(SCG0);                  // Enable the FLL control loop
+
+  // Worst-case settling time for the DCO when the DCO range bits have been
+  // changed is n x 32 x 32 x f_MCLK / f_FLL_reference. See UCS chapter in 5xx
+  // UG for optimization.
+  // 32 x 32 x 12 MHz / 32,768 Hz = 375000 = MCLK cycles for DCO to settle
+  __delay_cycles(375000);
+	
+  // Loop until XT1,XT2 & DCO fault flag is cleared
+  do
+  {
+    UCSCTL7 &= ~(XT2OFFG + XT1LFOFFG + XT1HFOFFG + DCOFFG);
+                                            // Clear XT2,XT1,DCO fault flags
+    SFRIFG1 &= ~OFIFG;                      // Clear fault flags
+  }while (SFRIFG1&OFIFG);                   // Test oscillator fault flag
+  
+  
+  TIMER_Ini();
+  ADC_Ini();
+  UART_Ini();
+  GPIO_Ini();
+  __enable_interrupt();
+
   while(1){
-    FCTL3 = FWKEY;
-    FCTL1 = FWKEY+WRT;
-    for(i = 0; i < 5881; i ++){
-      *Flash_ptrA = i;
-      Flash_ptrA --;
-    }
-    
-    _NOP();
-    Flash_ptrA =(long int *)  0x02FFFF;
-    FCTL1 = FWKEY+MERAS; 
-    *Flash_ptrA = 0;
-    _NOP();
+    keyProc();
   }
 }
 
