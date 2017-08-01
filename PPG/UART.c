@@ -215,6 +215,9 @@ void UARTRx(char data){
   case 25:
     if(data == 'y'){
       //
+      if(DataEmpty = 0){
+        DataSend();
+      }
       datastep = 1;
     }
     break;
@@ -246,6 +249,9 @@ void UARTRx(char data){
   case 29:
     if(data == 't'){
       //
+      if(DataEmpty = 0){
+        DataSend();
+      }
       datastep = 1;
     }
     break;
