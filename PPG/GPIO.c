@@ -9,20 +9,20 @@ int select = 0;
 int key_step = 1;
 
 void GPIO_Ini(void){
-  P2DIR |= BIT0;
+  P2DIR &= ~BIT0;
   P2OUT = BIT0;
   P2IE = BIT0;
   P2IES |= BIT0; 
   P2IFG &= ~BIT0;
 }
 
-#pragma vector=PORT1_VECTOR
-__interrupt void Port_1(void){
+#pragma vector=PORT2_VECTOR
+__interrupt void Port_2(void){
   if(key_step == 1){
     key_step = 2;
     keytick = 0;
   }
-  P1IFG &= ~BIT0;
+  P2IFG &= ~BIT0;
 }
 
 void keyProc(void){
